@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目发布页面</title>
+    <link rel="stylesheet" href="css/cproject.css">
+</head>
+<body>
+    <div class="container">
+        <h1>发起我的项目</h1>
+        <form id="projectForm">
+            <label for="title">项目名称:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">项目简介:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="startTime">项目开始时间:</label>
+        <input type="datetime-local" id="startTime" name="startTime" required>
+
+            <label for="deadline">项目截止时间:</label>
+            <input type="datetime-local" id="deadline" name="deadline" required>
+
+            <label for="personCount">选择人员数量:</label>
+            <input type="number" id="personCount" name="personCount" min="1" required>
+
+            <label for="projectField">该项目所涉及的领域:</label>
+            <input type="text" id="projectField" name="projectField" required>
+            
+            <button type="submit">发布项目</button>
+            <button type="button" id="cancelButton">取消</button>
+        </form>
+    </div>
+    <script src="js/cproject.js"></script>
+</body>
+</html>
